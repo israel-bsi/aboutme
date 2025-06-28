@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Certifications" xml:space="preserve">
+    <value>Certifications</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="DegreeName" xml:space="preserve">
+    <value>Interdisciplinary Bachelor's Degree in Science and Technology</value>
+  </data>
+  <data name="Education" xml:space="preserve">
+    <value>Education</value>
+  </data>
+  <data name="HardSkills" xml:space="preserve">
+    <value>Hard Skills</value>
+  </data>
+  <data name="Languages" xml:space="preserve">
+    <value>Languages</value>
+  </data>
+  <data name="LanguageSpeak" xml:space="preserve">
+    <value>Languages</value>
+  </data>
+  <data name="LanguageSpeak1" xml:space="preserve">
+    <value>Portuguese - Native</value>
+  </data>
+  <data name="LanguageSpeak2" xml:space="preserve">
+    <value>English - Intermediate</value>
+  </data>
+  <data name="NetDeveloper" xml:space="preserve">
+    <value>Mid .NET Developer</value>
+  </data>
+  <data name="ProfessionalExperience" xml:space="preserve">
+    <value>Professional Experience</value>
+  </data>
+  <data name="Project1" xml:space="preserve">
+    <value>• Automation of sending information in the background between the ERP and the POS using Windows Forms in the .NET Framework 4.8.</value>
+  </data>
+  <data name="Project2" xml:space="preserve">
+    <value>• Integration of the ERP with the issuance of Itaú and Santander bills, consuming the banks' API and handling the return of XML files to the ERP using .NET 6.</value>
+  </data>
+  <data name="Project3" xml:space="preserve">
+    <value>• Integration of the ERP POS with Cresce Vendas, consuming the platform API and handling the return of XML files to the POS using .NET 6.</value>
+  </data>
+  <data name="Project4" xml:space="preserve">
+    <value>• Integration of ERP with Nuvemshop e-commerce through an application developed in .NET 8 using Minimal APIs on the backend, Blazor on the frontend, .NET Aspire to orchestrate development and Docker for deployment.</value>
+  </data>
+  <data name="Project5" xml:space="preserve">
+    <value>• Creation of an internal application to manage customer requests, developed using .NET 8 with MVC, JWT authentication on the backend, Blazor on the frontend, .NET Aspire to orchestrate development and IIS for deployment.</value>
+  </data>
+  <data name="Projects" xml:space="preserve">
+    <value>Developed Projects:</value>
+  </data>
+  <data name="RelevantProject1" xml:space="preserve">
+    <value>Real Estate Brokerage Portal</value>
+  </data>
+  <data name="RelevantProjects" xml:space="preserve">
+    <value>Relevant Projects</value>
+  </data>
+  <data name="Responsibilities" xml:space="preserve">
+    <value>Responsibilities</value>
+  </data>
+  <data name="Responsibility1" xml:space="preserve">
+    <value>• Development of web and desktop solutions with .NET, ASP.NET and Blazor.</value>
+  </data>
+  <data name="Responsibility2" xml:space="preserve">
+    <value>• Implementation of RESTful APIs.</value>
+  </data>
+  <data name="Responsibility3" xml:space="preserve">
+    <value>• Integration and maintenance of legacy systems.</value>
+  </data>
+  <data name="Responsibility4" xml:space="preserve">
+    <value>• Maintenance of reports using Delphi/Pascal.</value>
+  </data>
+  <data name="Responsibility5" xml:space="preserve">
+    <value>• Maintenance of triggers, procedures and tables in the Firebird database.</value>
+  </data>
+  <data name="ResumeText1" xml:space="preserve">
+    <value>.NET developer with 3 years of experience in the market, with an Interdisciplinary Bachelor's Degree in Science and Technology in progress and with practical knowledge in the following technologies: </value>
+  </data>
+  <data name="ResumeText2" xml:space="preserve">
+    <value>Experience in software architecture, design patterns and good development practices.</value>
+  </data>
+  <data name="ResumeText3" xml:space="preserve">
+    <value>Committed to delivering high quality solutions and continuous learning.</value>
+  </data>
+  <data name="ResumeTitle" xml:space="preserve">
+    <value>Professional Summary</value>
+  </data>
+  <data name="SupportAnalyst" xml:space="preserve">
+    <value>IT Analyst</value>
+  </data>
+  <data name="SupportAnalyst1" xml:space="preserve">
+    <value>• Analysis of SQL queries in Firebird.</value>
+  </data>
+  <data name="SupportAnalyst2" xml:space="preserve">
+    <value>• Source code analysis in Delphi.</value>
+  </data>
+  <data name="SupportAnalyst3" xml:space="preserve">
+    <value>• Analysis of situations related to the issuance of electronic invoices.</value>
+  </data>
+  <data name="SupportAnalyst4" xml:space="preserve">
+    <value>• Customer service via remote access software.</value>
+  </data>
+  <data name="Technologies" xml:space="preserve">
+    <value>.NET, C#, Blazor, Java, Delphi, Firebird, MySQL, PostgreSQL, Github e Docker.</value>
+  </data>
+  <data name="TextToContact" xml:space="preserve">
+    <value>Feel free to contact me at: </value>
+  </data>
+  <data name="Tools" xml:space="preserve">
+    <value>Tools and Databases</value>
+  </data>
+</root>

@@ -1,4 +1,6 @@
 ﻿@page "/"
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<Home> Localizer
 
 <MudGrid>
     <MudItem xs="12">
@@ -7,25 +9,20 @@
 
             <MudDivider Class="my-4" />
 
-            <MudText Typo="Typo.h5" Class="mb-2">Resumo Profissional</MudText>
+            <MudText Typo="Typo.h5" Class="mb-2">@Localizer["ResumeTitle"]</MudText>
             <MudText>
-                <p>
-                    Desenvolvedor .NET com 3 anos de atuação no mercado, com formação em Bacharelado Interdisciplinar
-                    em Ciencia e Tecnologia em andamento e com conhecimento prático nas seguintes tecnologias: <b>
-                        .NET, C#, Blazor, Java, Delphi, Firebird, MySQL, PostgreSQL, Github e Docker.
-                    </b>
-                </p>
-                <p>Experiência em arquitetura de software, padrões de projeto e boas práticas de desenvolvimento.</p>
-                <p>Comprometido com a entrega de soluções de alta qualidade e aprendizado contínuo.</p>
+                @Localizer["ResumeText1"] <b>@Localizer["Technologies"]</b>
+                @Localizer["ResumeText2"]
+                @Localizer["ResumeText3"]
             </MudText>
 
             <MudDivider Class="my-4" />
 
-            <MudText Typo="Typo.h5" Class="mb-2">Habilidades Técnicas</MudText>
+            <MudText Typo="Typo.h5" Class="mb-2">@Localizer["HardSkills"]</MudText>
             <MudGrid>
                 <MudItem xs="12" sm="6" md="4">
                     <MudPaper Class="pa-2" Elevation="0">
-                        <MudText Typo="Typo.subtitle1">Linguagens</MudText>
+                        <MudText Typo="Typo.subtitle1">@Localizer["Languages"]</MudText>
                         <MudList T="string" ReadOnly="true">
                             <MudListItem T="string" Text="C#" Icon="@Icons.Material.Filled.Code" />
                             <MudListItem T="string" Text="Java" Icon="@Icons.Material.Filled.Code" />
@@ -47,7 +44,7 @@
                 </MudItem>
                 <MudItem xs="12" sm="6" md="4">
                     <MudPaper Class="pa-2" Elevation="0">
-                        <MudText Typo="Typo.subtitle1">Ferramentas e Bancos de Dados</MudText>
+                        <MudText Typo="Typo.subtitle1">@Localizer["Tools"]</MudText>
                         <MudList T="string" ReadOnly="true">
                             <MudListItem T="string" Text="Git" Icon="@Icons.Material.Filled.Build" />
                             <MudListItem T="string" Text="Firebird" Icon="@Icons.Material.Filled.Build" />
@@ -61,74 +58,57 @@
 
             <MudDivider Class="my-4" />
 
-            <MudText Typo="Typo.h5">Experiência Profissional</MudText>
+            <MudText Typo="Typo.h5">@Localizer["ProfessionalExperience"]</MudText>
             <MudTimeline TimelinePosition="TimelinePosition.Start" TimelineAlign="TimelineAlign.Start">
                 <MudTimelineItem Color="Color.Primary">
-                    <MudText Typo="Typo.h6">Analista de Suporte</MudText>
+                    <MudText Typo="Typo.h6">@Localizer["SupportAnalyst"]</MudText>
                     <MudText Typo="Typo.subtitle1">Sge Automação e Serviços LTDA | 2018 - 2022</MudText>
                     <MudText>
-                        <p>• Análise de consultas SQL no Firebird.</p>
-                        <p>• Análise de código fonte em Delphi.</p>
-                        <p>• Análise de situações referentes à emissão de notas fiscais eletrônicas.</p>
-                        <p>• Atendimento via software de acesso remoto aos clientes.</p>
+                        <p>@Localizer["SupportAnalyst1"]</p>
+                        <p>@Localizer["SupportAnalyst2"]</p>
+                        <p>@Localizer["SupportAnalyst3"]</p>
+                        <p>@Localizer["SupportAnalyst4"]</p>
                     </MudText>
                 </MudTimelineItem>
 
                 <MudTimelineItem Color="Color.Primary" Size="Size.Medium">
-                    <MudText Typo="Typo.h6">Desenvolvedor .NET Pleno</MudText>
+                    <MudText Typo="Typo.h6">@Localizer["NetDeveloper"]</MudText>
                     <MudText Typo="Typo.subtitle1">Sge Automação e Serviços LTDA | 2022 - Atualmente</MudText>
                     <MudText>
-                        <MudText Typo="Typo.body1" Style="font-weight: bold;">Responsabilidades:</MudText>
-                        <p>• Desenvolvimento de soluções web e desktop com .NET, ASP.NET e Blazor.</p>
-                        <p>• Implementação de APIs RESTful.</p>
-                        <p>• Integração e manutenção de sistemas legados.</p>
-                        <p>• Manutenção em relatórios utilizando Delphi/Pascal.</p>
-                        <p>• Manutenção em triggers, procedures e tabelas do banco de dados Firebird.</p>
+                        <MudText Typo="Typo.body1" Style="font-weight: bold;">@Localizer["Responsibilities"]:</MudText>
+                        <p>@Localizer["Responsibility1"]</p>
+                        <p>@Localizer["Responsibility2"]</p>
+                        <p>@Localizer["Responsibility3"]</p>
+                        <p>@Localizer["Responsibility4"]</p>
+                        <p>@Localizer["Responsibility5"]</p>
                         <MudDivider Class="my-4" />
-                        <MudText Typo="Typo.body1" Style="font-weight: bold;">Projetos Desenvolvidos:</MudText>
-                        <p class="mb-4">
-                            • Automatização do envio de informações em segundo plano entre o ERP e o PDV utilizando
-                            Windows Forms no .NET Framework 4.8.
-                        </p>
-                        <p class="mb-4">
-                            • Integração do ERP com a emissão de Boletos do Itaú e Santander, consumindo a API dos
-                            bancos e tratando o retorno de arquivos XML para o ERP utilizando .NET 6.
-                        </p>
-                        <p class="mb-4">
-                            • Integração do PDV do ERP com o Cresce Vendas, consumindo a API da plataforma e
-                            tratando o retorno de arquivos XML para o PDV utilizando .NET 6.
-                        </p>
-                        <p class="mb-4">
-                            • Integração do ERP com o e-commerce da Nuvemshop através de uma aplicação
-                            desenvolvida em .NET 8 utilizando Minimal APIs no backend, Blazor no frontend, .NET Aspire
-                            para orquestrar o desenvolvimento e Docker para o deploy.
-                        </p>
-                        <p class="mb-4">
-                            • Criação de uma aplicação interna para gerenciar as solicitações dos clientes, desenvolvida
-                            utilizando .NET 8 com MVC, autenticação JWT no backend, Blazor no frontend, .NET Aspire
-                            para orquestrar o desenvolvimento e IIS para o deploy.
-                        </p>
+                        <MudText Typo="Typo.body1" Style="font-weight: bold;">@Localizer["Projects"]</MudText>
+                        <p class="mb-4">@Localizer["Project1"]</p>
+                        <p class="mb-4">@Localizer["Project2"]</p>
+                        <p class="mb-4">@Localizer["Project3"]</p>
+                        <p class="mb-4">@Localizer["Project4"]</p>
+                        <p class="mb-4">@Localizer["Project5"]</p>
                     </MudText>
                 </MudTimelineItem>
             </MudTimeline>
 
             <MudDivider Class="my-4" />
 
-            <MudText Typo="Typo.h5" Class="mb-2">Formação Acadêmica</MudText>
+            <MudText Typo="Typo.h5" Class="mb-2">@Localizer["Education"]</MudText>
             <MudList T="string" ReadOnly="true">
                 <MudListItem T="string">
-                    <MudText Typo="Typo.h6">Bacharelado Interdisciplinar em Ciência e Tecnologia</MudText>
+                    <MudText Typo="Typo.h6">@Localizer["DegreeName"]</MudText>
                     <MudText Typo="Typo.subtitle1">Universidade Federal do Maranhão (UFMA) | 2020 - 2026</MudText>
                     <MudText>
-                        Projetos Relevantes:
-                        <MudLink Href="https://github.com/israel-bsi/realtyhub">Portal de Corretagem de Imóveis</MudLink>
+                        @Localizer["RelevantProjects"]:
+                        <MudLink Href="https://github.com/israel-bsi/realtyhub">@Localizer["RelevantProject1"]</MudLink>
                     </MudText>
                 </MudListItem>
             </MudList>
 
             <MudDivider Class="my-4" />
 
-            <MudText Typo="Typo.h5" Class="mb-2">Certificações</MudText>
+            <MudText Typo="Typo.h5" Class="mb-2">@Localizer["Certifications"]</MudText>
             <MudList T="string" ReadOnly="true">
                 <MudListItem T="string">
                     <MudLink Typo="Typo.h6" Href="https://www.freecodecamp.org/certification/israelbsi/foundational-c-sharp-with-microsoft">
@@ -140,13 +120,13 @@
 
             <MudDivider Class="my-4" />
 
-            <MudText Typo="Typo.h5" Class="mb-2">Idiomas</MudText>
+            <MudText Typo="Typo.h5" Class="mb-2">@Localizer["LanguageSpeak"]</MudText>
             <MudGrid>
                 <MudItem xs="12" sm="6">
                     <MudPaper Class="pa-2" Elevation="0">
                         <MudList T="string" ReadOnly="true">
-                            <MudListItem T="string" Text="Português - Nativo" Icon="@Icons.Material.Filled.Language" />
-                            <MudListItem T="string" Text="Inglês - Intermediário" Icon="@Icons.Material.Filled.Language" />
+                            <MudListItem T="string" Text="@Localizer["LanguageSpeak1"]" Icon="@Icons.Material.Filled.Language" />
+                            <MudListItem T="string" Text="@Localizer["LanguageSpeak2"]" Icon="@Icons.Material.Filled.Language" />
                         </MudList>
                     </MudPaper>
                 </MudItem>
@@ -154,11 +134,11 @@
 
             <MudDivider Class="my-4" />
 
-            <MudText Typo="Typo.h5" Class="mb-2">Contato</MudText>
+            <MudText Typo="Typo.h5" Class="mb-2">@Localizer["Contact"]</MudText>
             <MudGrid>
-                <MudItem xs="12" sm="6">
+                <MudItem xs="12" sm="6" md="8">
                     <MudText>
-                        Email para contato: <MudLink Href="mailto:israelsilvadev3@gmail.com">israelsilvadev3@gmail.com</MudLink>
+                        @Localizer["TextToContact"] <MudLink Href="mailto:israelsilvadev3@gmail.com">israelsilvadev3@gmail.com</MudLink>
                     </MudText>
                     <MudPaper Class="pa-2" Elevation="0">
                         <MudButton Href="https://www.linkedin.com/in/israelbsilva/"

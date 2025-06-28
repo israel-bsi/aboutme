@@ -1,8 +1,11 @@
-﻿@inherits LayoutComponentBase
+﻿@using System.Globalization
+@inherits LayoutComponentBase
+@inject IJSRuntime JsRuntime
 
 <MudThemeProvider @bind-IsDarkMode="@_isDarkMode" />
 <MudDialogProvider />
 <MudSnackbarProvider />
+<MudPopoverProvider />
 
 <MudLayout>
     <MudAppBar Elevation="1">
@@ -24,5 +27,17 @@
     private void ToggleDarkMode()
     {
         _isDarkMode = !_isDarkMode;
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        var cultureString = await JsRuntime.InvokeAsync<string>("localStorage.getItem", "culture");
+
+        var culture = !string.IsNullOrEmpty(cultureString)
+            ? new CultureInfo(cultureString)
+            : new CultureInfo("pt-BR"); // Padrão
+
+        CultureInfo.DefaultThreadCurrentCulture = culture;
+        CultureInfo.DefaultThreadCurrentUICulture = culture;
     }
 }

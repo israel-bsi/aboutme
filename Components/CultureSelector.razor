@@ -1,0 +1,15 @@
+﻿@inject NavigationManager Navigation
+@inject IJSRuntime JSRuntime
+
+<MudMenu Icon="@Icons.Material.Filled.Translate" Color="Color.Inherit" Dense="true">
+    <MudMenuItem OnClick='() => ChangeCulture("pt-BR")'>Português</MudMenuItem>
+    <MudMenuItem OnClick='() => ChangeCulture("en-US")'>English</MudMenuItem>
+</MudMenu>
+
+@code {
+    private async Task ChangeCulture(string culture)
+    {
+        await JSRuntime.InvokeVoidAsync("localStorage.setItem", "culture", culture);
+        Navigation.NavigateTo(Navigation.Uri, forceLoad: true);
+    }
+}
