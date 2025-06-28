@@ -1,7 +1,186 @@
 ﻿@page "/"
 
-<PageTitle>Home</PageTitle>
+<MudGrid>
+    <MudItem xs="12">
+        <MudPaper Class="pa-4">
+            <MudText Typo="Typo.h4" Class="mb-4" Align="Align.Center">Israel Barbosa Silva</MudText>
 
-<h1>Hello, world!</h1>
+            <MudDivider Class="my-4" />
 
-Welcome to your new app.
+            <MudText Typo="Typo.h5" Class="mb-2">Resumo Profissional</MudText>
+            <MudText>
+                <p>
+                    Desenvolvedor .NET com 3 anos de atuação no mercado, com formação em Bacharelado Interdisciplinar
+                    em Ciencia e Tecnologia em andamento e com conhecimento prático nas seguintes tecnologias: <b>
+                        .NET, C#, Blazor, Java, Delphi, Firebird, MySQL, PostgreSQL, Github e Docker.
+                    </b>
+                </p>
+                <p>Experiência em arquitetura de software, padrões de projeto e boas práticas de desenvolvimento.</p>
+                <p>Comprometido com a entrega de soluções de alta qualidade e aprendizado contínuo.</p>
+            </MudText>
+
+            <MudDivider Class="my-4" />
+
+            <MudText Typo="Typo.h5" Class="mb-2">Habilidades Técnicas</MudText>
+            <MudGrid>
+                <MudItem xs="12" sm="6" md="4">
+                    <MudPaper Class="pa-2" Elevation="0">
+                        <MudText Typo="Typo.subtitle1">Linguagens</MudText>
+                        <MudList T="string" ReadOnly="true">
+                            <MudListItem T="string" Text="C#" Icon="@Icons.Material.Filled.Code" />
+                            <MudListItem T="string" Text="Java" Icon="@Icons.Material.Filled.Code" />
+                            <MudListItem T="string" Text="Object Pascal | Delphi" Icon="@Icons.Material.Filled.Code" />
+                            <MudListItem T="string" Text="SQL" Icon="@Icons.Material.Filled.Code" />
+                        </MudList>
+                    </MudPaper>
+                </MudItem>
+                <MudItem xs="12" sm="6" md="4">
+                    <MudPaper Class="pa-2" Elevation="0">
+                        <MudText Typo="Typo.subtitle1">Frameworks</MudText>
+                        <MudList T="string" ReadOnly="true">
+                            <MudListItem T="string" Text=".NET Core | .NET | ASP.NET Core" Icon="@Icons.Material.Filled.DeveloperBoard" />
+                            <MudListItem T="string" Text="Windows Forms" Icon="@Icons.Material.Filled.DeveloperBoard" />
+                            <MudListItem T="string" Text="Entity Framework" Icon="@Icons.Material.Filled.DeveloperBoard" />
+                            <MudListItem T="string" Text="Blazor" Icon="@Icons.Material.Filled.DeveloperBoard" />
+                        </MudList>
+                    </MudPaper>
+                </MudItem>
+                <MudItem xs="12" sm="6" md="4">
+                    <MudPaper Class="pa-2" Elevation="0">
+                        <MudText Typo="Typo.subtitle1">Ferramentas e Bancos de Dados</MudText>
+                        <MudList T="string" ReadOnly="true">
+                            <MudListItem T="string" Text="Git" Icon="@Icons.Material.Filled.Build" />
+                            <MudListItem T="string" Text="Firebird" Icon="@Icons.Material.Filled.Build" />
+                            <MudListItem T="string" Text="SQL Server" Icon="@Icons.Material.Filled.Build" />
+                            <MudListItem T="string" Text="PostgreSQL" Icon="@Icons.Material.Filled.Build" />
+                            <MudListItem T="string" Text="MySQL" Icon="@Icons.Material.Filled.Build" />
+                        </MudList>
+                    </MudPaper>
+                </MudItem>
+            </MudGrid>
+
+            <MudDivider Class="my-4" />
+
+            <MudText Typo="Typo.h5">Experiência Profissional</MudText>
+            <MudTimeline TimelinePosition="TimelinePosition.Start" TimelineAlign="TimelineAlign.Start">
+                <MudTimelineItem Color="Color.Primary">
+                    <MudText Typo="Typo.h6">Analista de Suporte</MudText>
+                    <MudText Typo="Typo.subtitle1">Sge Automação e Serviços LTDA | 2018 - 2022</MudText>
+                    <MudText>
+                        <p>• Análise de consultas SQL no Firebird.</p>
+                        <p>• Análise de código fonte em Delphi.</p>
+                        <p>• Análise de situações referentes à emissão de notas fiscais eletrônicas.</p>
+                        <p>• Atendimento via software de acesso remoto aos clientes.</p>
+                    </MudText>
+                </MudTimelineItem>
+
+                <MudTimelineItem Color="Color.Primary" Size="Size.Medium">
+                    <MudText Typo="Typo.h6">Desenvolvedor .NET Pleno</MudText>
+                    <MudText Typo="Typo.subtitle1">Sge Automação e Serviços LTDA | 2022 - Atualmente</MudText>
+                    <MudText>
+                        <MudText Typo="Typo.body1" Style="font-weight: bold;">Responsabilidades:</MudText>
+                        <p>• Desenvolvimento de soluções web e desktop com .NET, ASP.NET e Blazor.</p>
+                        <p>• Implementação de APIs RESTful.</p>
+                        <p>• Integração e manutenção de sistemas legados.</p>
+                        <p>• Manutenção em relatórios utilizando Delphi/Pascal.</p>
+                        <p>• Manutenção em triggers, procedures e tabelas do banco de dados Firebird.</p>
+                        <MudDivider Class="my-4" />
+                        <MudText Typo="Typo.body1" Style="font-weight: bold;">Projetos Desenvolvidos:</MudText>
+                        <p class="mb-4">
+                            • Automatização do envio de informações em segundo plano entre o ERP e o PDV utilizando
+                            Windows Forms no .NET Framework 4.8.
+                        </p>
+                        <p class="mb-4">
+                            • Integração do ERP com a emissão de Boletos do Itaú e Santander, consumindo a API dos
+                            bancos e tratando o retorno de arquivos XML para o ERP utilizando .NET 6.
+                        </p>
+                        <p class="mb-4">
+                            • Integração do PDV do ERP com o Cresce Vendas, consumindo a API da plataforma e
+                            tratando o retorno de arquivos XML para o PDV utilizando .NET 6.
+                        </p>
+                        <p class="mb-4">
+                            • Integração do ERP com o e-commerce da Nuvemshop através de uma aplicação
+                            desenvolvida em .NET 8 utilizando Minimal APIs no backend, Blazor no frontend, .NET Aspire
+                            para orquestrar o desenvolvimento e Docker para o deploy.
+                        </p>
+                        <p class="mb-4">
+                            • Criação de uma aplicação interna para gerenciar as solicitações dos clientes, desenvolvida
+                            utilizando .NET 8 com MVC, autenticação JWT no backend, Blazor no frontend, .NET Aspire
+                            para orquestrar o desenvolvimento e IIS para o deploy.
+                        </p>
+                    </MudText>
+                </MudTimelineItem>
+            </MudTimeline>
+
+            <MudDivider Class="my-4" />
+
+            <MudText Typo="Typo.h5" Class="mb-2">Formação Acadêmica</MudText>
+            <MudList T="string" ReadOnly="true">
+                <MudListItem T="string">
+                    <MudText Typo="Typo.h6">Bacharelado Interdisciplinar em Ciência e Tecnologia</MudText>
+                    <MudText Typo="Typo.subtitle1">Universidade Federal do Maranhão (UFMA) | 2020 - 2026</MudText>
+                    <MudText>
+                        Projetos Relevantes:
+                        <MudLink Href="https://github.com/israel-bsi/realtyhub">Portal de Corretagem de Imóveis</MudLink>
+                    </MudText>
+                </MudListItem>
+            </MudList>
+
+            <MudDivider Class="my-4" />
+
+            <MudText Typo="Typo.h5" Class="mb-2">Certificações</MudText>
+            <MudList T="string" ReadOnly="true">
+                <MudListItem T="string">
+                    <MudLink Typo="Typo.h6" Href="https://www.freecodecamp.org/certification/israelbsi/foundational-c-sharp-with-microsoft">
+                        Foundational C# with Microsoft - freeCodeCamp
+                    </MudLink>
+                    <MudText Typo="Typo.subtitle1">freeCodeCamp.org | Microsoft | 2025</MudText>
+                </MudListItem>
+            </MudList>
+
+            <MudDivider Class="my-4" />
+
+            <MudText Typo="Typo.h5" Class="mb-2">Idiomas</MudText>
+            <MudGrid>
+                <MudItem xs="12" sm="6">
+                    <MudPaper Class="pa-2" Elevation="0">
+                        <MudList T="string" ReadOnly="true">
+                            <MudListItem T="string" Text="Português - Nativo" Icon="@Icons.Material.Filled.Language" />
+                            <MudListItem T="string" Text="Inglês - Intermediário" Icon="@Icons.Material.Filled.Language" />
+                        </MudList>
+                    </MudPaper>
+                </MudItem>
+            </MudGrid>
+
+            <MudDivider Class="my-4" />
+
+            <MudText Typo="Typo.h5" Class="mb-2">Contato</MudText>
+            <MudGrid>
+                <MudItem xs="12" sm="6">
+                    <MudText>
+                        Email para contato: <MudLink Href="mailto:israelsilvadev3@gmail.com">israelsilvadev3@gmail.com</MudLink>
+                    </MudText>
+                    <MudPaper Class="pa-2" Elevation="0">
+                        <MudButton Href="https://www.linkedin.com/in/israelbsilva/"
+                                   StartIcon="@Icons.Custom.Brands.LinkedIn"
+                                   Variant="Variant.Outlined"
+                                   Target="true">
+                            <MudText>
+                                LinkedIn
+                            </MudText>
+                        </MudButton>
+                        <MudButton Class="ml-4"
+                                   Href="https://github.com/israel-bsi"
+                                   StartIcon="@Icons.Custom.Brands.GitHub"
+                                   Variant="Variant.Outlined"
+                                   Target="true">
+                            <MudText>
+                                GitHub
+                            </MudText>
+                        </MudButton>
+                    </MudPaper>
+                </MudItem>
+            </MudGrid>
+        </MudPaper>
+    </MudItem>
+</MudGrid>
