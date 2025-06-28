@@ -11,9 +11,9 @@
 
             <MudText Typo="Typo.h5" Class="mb-2">@Localizer["ResumeTitle"]</MudText>
             <MudText>
-                @Localizer["ResumeText1"] <b>@Localizer["Technologies"]</b>
-                @Localizer["ResumeText2"]
-                @Localizer["ResumeText3"]
+                <p>@Localizer["ResumeText1"] <b>@Localizer["Technologies"]</b></p>
+                <p>@Localizer["ResumeText2"]</p>
+                <p>@Localizer["ResumeText3"]</p>
             </MudText>
 
             <MudDivider Class="my-4" />
@@ -101,7 +101,7 @@
                     <MudText Typo="Typo.subtitle1">Universidade Federal do Maranhão (UFMA) | 2020 - 2026</MudText>
                     <MudText>
                         @Localizer["RelevantProjects"]:
-                        <MudLink Href="https://github.com/israel-bsi/realtyhub">@Localizer["RelevantProject1"]</MudLink>
+                        <MudLink Target="_blank" Href="https://github.com/israel-bsi/realtyhub">@Localizer["RelevantProject1"]</MudLink>
                     </MudText>
                 </MudListItem>
             </MudList>
@@ -111,7 +111,7 @@
             <MudText Typo="Typo.h5" Class="mb-2">@Localizer["Certifications"]</MudText>
             <MudList T="string" ReadOnly="true">
                 <MudListItem T="string">
-                    <MudLink Typo="Typo.h6" Href="https://www.freecodecamp.org/certification/israelbsi/foundational-c-sharp-with-microsoft">
+                    <MudLink Typo="Typo.h6" Target="_blank" Href="https://www.freecodecamp.org/certification/israelbsi/foundational-c-sharp-with-microsoft">
                         Foundational C# with Microsoft - freeCodeCamp
                     </MudLink>
                     <MudText Typo="Typo.subtitle1">freeCodeCamp.org | Microsoft | 2025</MudText>
@@ -144,7 +144,7 @@
                         <MudButton Href="https://www.linkedin.com/in/israelbsilva/"
                                    StartIcon="@Icons.Custom.Brands.LinkedIn"
                                    Variant="Variant.Outlined"
-                                   Target="true">
+                                   Target="_blank">
                             <MudText>
                                 LinkedIn
                             </MudText>
@@ -153,7 +153,7 @@
                                    Href="https://github.com/israel-bsi"
                                    StartIcon="@Icons.Custom.Brands.GitHub"
                                    Variant="Variant.Outlined"
-                                   Target="true">
+                                   Target="_blank">
                             <MudText>
                                 GitHub
                             </MudText>
