@@ -1,6 +1,6 @@
-﻿@using System.Globalization
+﻿@using AboutMe.Services
 @inherits LayoutComponentBase
-@inject IJSRuntime JsRuntime
+@inject ThemeService ThemeService
 
 <MudThemeProvider @bind-IsDarkMode="@_isDarkMode" />
 <MudDialogProvider />
@@ -8,14 +8,12 @@
 <MudPopoverProvider />
 
 <MudLayout>
-    <MudAppBar Elevation="1">
-        <MudText Typo="Typo.h6">Israel Barbosa Silva</MudText>
-        <MudSpacer />
-        <CultureSelector />
-        <MudIconButton Icon="@Icons.Material.Filled.Brightness4" Color="Color.Inherit" OnClick="@ToggleDarkMode" />
-    </MudAppBar>
-
     <MudMainContent>
+        <div class="floating-controls">
+            <CultureSelector />
+            <MudIconButton Icon="@Icons.Material.Filled.Brightness4" Color="Color.Default" OnClick="@ToggleDarkMode" />
+        </div>
+
         <MudContainer MaxWidth="MaxWidth.Large" Class="my-4">
             @Body
         </MudContainer>
@@ -28,5 +26,6 @@
     private void ToggleDarkMode()
     {
         _isDarkMode = !_isDarkMode;
+        ThemeService.SetDarkMode(_isDarkMode);
     }
 }
