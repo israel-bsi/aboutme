@@ -33,14 +33,29 @@ jobs:
       - name: Install .NET Wasm Tools
         run: dotnet workload install wasm-tools
 
+      - name: Fix Resource Encoding
+        run: |
+          for file in $(find Resources -name "*.resx"); do
+            iconv -f UTF-8 -t UTF-8 "$file" -o "$file.tmp" && mv "$file.tmp" "$file"
+          done
+
       - name: Restore Dependencies
         run: dotnet restore
 
       - name: Build
         run: dotnet build -c Release --no-restore
+        env:
+          DOTNET_CLI_UI_LANGUAGE: pt-BR
+          DOTNET_SYSTEM_GLOBALIZATION_INVARIANT: false
 
       - name: Publish .NET
         run: dotnet publish AboutMe.csproj -c:Release -o docs --nologo
+        env:
+          DOTNET_CLI_UI_LANGUAGE: pt-BR
+          DOTNET_SYSTEM_GLOBALIZATION_INVARIANT: false
+
+      - name: Copy .nojekyll
+        run: cp wwwroot/.nojekyll docs/wwwroot/.nojekyll || true
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
