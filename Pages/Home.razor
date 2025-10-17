@@ -11,7 +11,7 @@
 
             <MudText Typo="Typo.h5" Class="mb-2">@Localizer["ResumeTitle"]</MudText>
             <MudText>
-                <p>@Localizer["ResumeText1"] <b>@Localizer["Technologies"]</b></p>
+                <p>@Localizer["ResumeText1"]</p>
                 <p>@Localizer["ResumeText2"]</p>
                 <p>@Localizer["ResumeText3"]</p>
             </MudText>
@@ -24,8 +24,24 @@
                     <MudPaper Class="pa-2" Elevation="0">
                         <MudText Typo="Typo.subtitle1">@Localizer["Languages"]</MudText>
                         <MudList T="string" ReadOnly="true">
-                            <MudListItem T="string" Text="C#" Icon="@Icons.Material.Filled.Code" />
-                            <MudListItem T="string" Text="SQL" Icon="@Icons.Material.Filled.Code" />
+                            <MudListItem T="string">
+                                <MudStack Row="true" AlignItems="AlignItems.Center" Spacing="2">
+                                    <i class="devicon-csharp-plain colored" style="font-size: 1.5em;"></i>
+                                    <MudText>C#</MudText>
+                                </MudStack>
+                            </MudListItem>
+                            <MudListItem T="string">
+                                <MudStack Row="true" AlignItems="AlignItems.Center" Spacing="2">
+                                    <i class="devicon-java-plain colored" style="font-size: 1.5em;"></i>
+                                    <MudText>Java</MudText>
+                                </MudStack>
+                            </MudListItem>
+                            <MudListItem T="string">
+                                <MudStack Row="true" AlignItems="AlignItems.Center" Spacing="2">
+                                    <i class="devicon-azuresqldatabase-plain colored" style="font-size: 1.5em;"></i>
+                                    <MudText>SQL</MudText>
+                                </MudStack>
+                            </MudListItem>
                         </MudList>
                     </MudPaper>
                 </MudItem>
@@ -33,10 +49,30 @@
                     <MudPaper Class="pa-2" Elevation="0">
                         <MudText Typo="Typo.subtitle1">Frameworks</MudText>
                         <MudList T="string" ReadOnly="true">
-                            <MudListItem T="string" Text=".NET Core | .NET | ASP.NET Core" Icon="@Icons.Material.Filled.DeveloperBoard" />
-                            <MudListItem T="string" Text="Windows Forms" Icon="@Icons.Material.Filled.DeveloperBoard" />
-                            <MudListItem T="string" Text="Entity Framework" Icon="@Icons.Material.Filled.DeveloperBoard" />
-                            <MudListItem T="string" Text="Blazor" Icon="@Icons.Material.Filled.DeveloperBoard" />
+                            <MudListItem T="string">
+                                <MudStack Row="true" AlignItems="AlignItems.Center" Spacing="2">
+                                    <i class="devicon-dotnetcore-plain colored" style="font-size: 1.5em;"></i>
+                                    <MudText>.NET Core | .NET | ASP.NET Core</MudText>
+                                </MudStack>
+                            </MudListItem>
+                            <MudListItem T="string">
+                                <MudStack Row="true" AlignItems="AlignItems.Center" Spacing="2">
+                                    <i class="devicon-windows8-original colored" style="font-size: 1.5em;"></i>
+                                    <MudText>Windows Forms</MudText>
+                                </MudStack>
+                            </MudListItem>
+                            <MudListItem T="string">
+                                <MudStack Row="true" AlignItems="AlignItems.Center" Spacing="2">
+                                    <i class="devicon-entityframeworkcore-plain colored" style="font-size: 1.5em;"></i>
+                                    <MudText>Entity Framework Core</MudText>
+                                </MudStack>
+                            </MudListItem>
+                            <MudListItem T="string">
+                                <MudStack Row="true" AlignItems="AlignItems.Center" Spacing="2">
+                                    <i class="devicon-blazor-original colored" style="font-size: 1.5em;"></i>
+                                    <MudText>Blazor</MudText>
+                                </MudStack>
+                            </MudListItem>
                         </MudList>
                     </MudPaper>
                 </MudItem>
@@ -44,11 +80,36 @@
                     <MudPaper Class="pa-2" Elevation="0">
                         <MudText Typo="Typo.subtitle1">@Localizer["Tools"]</MudText>
                         <MudList T="string" ReadOnly="true">
-                            <MudListItem T="string" Text="Git" Icon="@Icons.Material.Filled.Build" />
-                            <MudListItem T="string" Text="Firebird" Icon="@Icons.Material.Filled.Build" />
-                            <MudListItem T="string" Text="SQL Server" Icon="@Icons.Material.Filled.Build" />
-                            <MudListItem T="string" Text="PostgreSQL" Icon="@Icons.Material.Filled.Build" />
-                            <MudListItem T="string" Text="MySQL" Icon="@Icons.Material.Filled.Build" />
+                            <MudListItem T="string">
+                                <MudStack Row="true" AlignItems="AlignItems.Center" Spacing="2">
+                                    <i class="devicon-git-plain colored" style="font-size: 1.5em;"></i>
+                                    <MudText>Git</MudText>
+                                </MudStack>
+                            </MudListItem>
+                            <MudListItem T="string">
+                                <MudStack Row="true" AlignItems="AlignItems.Center" Spacing="2">
+                                    <i class="devicon-dbeaver-plain colored" style="font-size: 1.5em;"></i>
+                                    <MudText>Dbeaver</MudText>
+                                </MudStack>
+                            </MudListItem>
+                            <MudListItem T="string">
+                                <MudStack Row="true" AlignItems="AlignItems.Center" Spacing="2">
+                                    <i class="devicon-microsoftsqlserver-plain colored" style="font-size: 1.5em;"></i>
+                                    <MudText>SQL Server</MudText>
+                                </MudStack>
+                            </MudListItem>
+                            <MudListItem T="string">
+                                <MudStack Row="true" AlignItems="AlignItems.Center" Spacing="2">
+                                    <i class="devicon-postgresql-plain colored" style="font-size: 1.5em;"></i>
+                                    <MudText>PostgreSQL</MudText>
+                                </MudStack>
+                            </MudListItem>
+                            <MudListItem T="string">
+                                <MudStack Row="true" AlignItems="AlignItems.Center" Spacing="2">
+                                    <i class="devicon-mysql-plain colored" style="font-size: 1.5em;"></i>
+                                    <MudText>MySQL</MudText>
+                                </MudStack>
+                            </MudListItem>
                         </MudList>
                     </MudPaper>
                 </MudItem>
@@ -58,9 +119,10 @@
 
             <MudText Typo="Typo.h5">@Localizer["ProfessionalExperience"]</MudText>
             <MudTimeline TimelinePosition="TimelinePosition.Start" TimelineAlign="TimelineAlign.Start">
+
                 <MudTimelineItem Color="Color.Primary">
                     <MudText Typo="Typo.h6">@Localizer["SupportAnalyst"]</MudText>
-                    <MudText Typo="Typo.subtitle1">Sge Automação e Serviços LTDA | 2018 - 2022</MudText>
+                    <MudText Typo="Typo.subtitle1">Sge Automação e Serviços | @Localizer["Month7"] 2018 - @Localizer["Month5"] 2022</MudText>
                     <MudText>
                         <p>@Localizer["SupportAnalyst1"]</p>
                         <p>@Localizer["SupportAnalyst2"]</p>
@@ -69,9 +131,9 @@
                     </MudText>
                 </MudTimelineItem>
 
-                <MudTimelineItem Color="Color.Primary" Size="Size.Medium">
+                <MudTimelineItem Color="Color.Primary">
                     <MudText Typo="Typo.h6">@Localizer["NetDeveloper"]</MudText>
-                    <MudText Typo="Typo.subtitle1">Sge Automação e Serviços LTDA | 2022 - Atualmente</MudText>
+                    <MudText Typo="Typo.subtitle1">Sge Automação e Serviços | @Localizer["Month5"] 2022 - @Localizer["Month8"] 2025</MudText>
                     <MudText>
                         <MudText Typo="Typo.body1" Style="font-weight: bold;">@Localizer["Responsibilities"]:</MudText>
                         <p>@Localizer["Responsibility1"]</p>
@@ -79,13 +141,21 @@
                         <p>@Localizer["Responsibility3"]</p>
                         <p>@Localizer["Responsibility4"]</p>
                         <p>@Localizer["Responsibility5"]</p>
-                        <MudDivider Class="my-4" />
+                        <MudDivider Class="my-2"/>
                         <MudText Typo="Typo.body1" Style="font-weight: bold;">@Localizer["Projects"]</MudText>
-                        <p class="mb-4">@Localizer["Project1"]</p>
-                        <p class="mb-4">@Localizer["Project2"]</p>
-                        <p class="mb-4">@Localizer["Project3"]</p>
-                        <p class="mb-4">@Localizer["Project4"]</p>
-                        <p class="mb-4">@Localizer["Project5"]</p>
+                        <p>@Localizer["Project1"]</p>
+                        <p>@Localizer["Project2"]</p>
+                        <p>@Localizer["Project3"]</p>
+                        <p>@Localizer["Project4"]</p>
+                        <p>@Localizer["Project5"]</p>
+                    </MudText>
+                </MudTimelineItem>
+
+                <MudTimelineItem Color="Color.Primary">
+                    <MudText Typo="Typo.h6">@Localizer["NetDeveloper"]</MudText>
+                    <MudText Typo="Typo.subtitle1">CRP Tecnologia | @Localizer["Month7"] 2025 - @Localizer["Current"]</MudText>
+                    <MudText>
+                        <p>@Localizer["CrpTecnologia1"]</p>
                     </MudText>
                 </MudTimelineItem>
             </MudTimeline>
@@ -123,8 +193,18 @@
                 <MudItem xs="12" sm="6">
                     <MudPaper Class="pa-2" Elevation="0">
                         <MudList T="string" ReadOnly="true">
-                            <MudListItem T="string" Text="@Localizer["LanguageSpeak1"]" Icon="@Icons.Material.Filled.Language" />
-                            <MudListItem T="string" Text="@Localizer["LanguageSpeak2"]" Icon="@Icons.Material.Filled.Language" />
+                            <MudListItem T="string">
+                                <MudStack Row="true" AlignItems="AlignItems.Center" Spacing="2">
+                                    <span class="fi fi-br" style="font-size: 1.5em;"></span>
+                                    <MudText>@Localizer["LanguageSpeak1"]</MudText>
+                                </MudStack>
+                            </MudListItem>
+                            <MudListItem T="string">
+                                <MudStack Row="true" AlignItems="AlignItems.Center" Spacing="2">
+                                    <span class="fi fi-us" style="font-size: 1.5em;"></span>
+                                    <MudText>@Localizer["LanguageSpeak2"]</MudText>
+                                </MudStack>
+                            </MudListItem>
                         </MudList>
                     </MudPaper>
                 </MudItem>
@@ -136,7 +216,7 @@
             <MudGrid>
                 <MudItem xs="12" sm="6" md="8">
                     <MudText>
-                        @Localizer["TextToContact"] <MudLink Href="mailto:israelsilvadev3@gmail.com">israelsilvadev3@gmail.com</MudLink>
+                        @Localizer["TextToContact"] <MudLink Href="mailto:israelbsi.solucoes@gmail.com">israelbsi.solucoes@gmail.com</MudLink>
                     </MudText>
                     <MudPaper Class="pa-2" Elevation="0">
                         <MudButton Href="https://www.linkedin.com/in/israelbsilva/"

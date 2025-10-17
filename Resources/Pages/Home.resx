@@ -123,6 +123,12 @@
   <data name="Contact" xml:space="preserve">
     <value>Contato</value>
   </data>
+  <data name="CrpTecnologia1" xml:space="preserve">
+    <value>• Desenvolvimento e manutenção de sistemas utilizando .NET 8.</value>
+  </data>
+  <data name="Current" xml:space="preserve">
+    <value>Atualmente</value>
+  </data>
   <data name="DegreeName" xml:space="preserve">
     <value>Bacharelado Interdisciplinar em Ciência e Tecnologia</value>
   </data>
@@ -144,6 +150,15 @@
   <data name="LanguageSpeak2" xml:space="preserve">
     <value>Inglês - Intermediário</value>
   </data>
+  <data name="Month5" xml:space="preserve">
+    <value>Maio</value>
+  </data>
+  <data name="Month7" xml:space="preserve">
+    <value>Setembro</value>
+  </data>
+  <data name="Month8" xml:space="preserve">
+    <value>Agosto</value>
+  </data>
   <data name="NetDeveloper" xml:space="preserve">
     <value>Desenvolvedor .NET Pleno</value>
   </data>
@@ -155,7 +170,7 @@
 Windows Forms no .NET Framework 4.8.</value>
   </data>
   <data name="Project2" xml:space="preserve">
-    <value>• Integração do ERP com a emissão de Boletos do Itaú e Santander, consumindo a API dos bancos e tratando o retorno de arquivos XML para o ERP utilizando .NET 6.</value>
+    <value>• Integração do ERP com a emissão de Boletos do Itaú, Santander e Bradesco, consumindo a API dos bancos e tratando o retorno de arquivos XML para o ERP utilizando .NET 6.</value>
   </data>
   <data name="Project3" xml:space="preserve">
     <value>• Integração do PDV do ERP com o Cresce Vendas, consumindo a API da plataforma e tratando o retorno de arquivos XML para o PDV utilizando .NET 6.</value>
@@ -194,13 +209,13 @@ Windows Forms no .NET Framework 4.8.</value>
     <value>• Manutenção em triggers, procedures e tabelas do banco de dados Firebird.</value>
   </data>
   <data name="ResumeText1" xml:space="preserve">
-    <value>Desenvolvedor .NET com 3 anos de atuação no mercado, com formação em Bacharelado Interdisciplinar em Ciencia e Tecnologia em andamento e com conhecimento prático nas seguintes tecnologias: </value>
+    <value>Desenvolvedor .NET orientado a resultados com 3 anos de experiência, especializado em construção e integração de aplicações corporativas fullstack.</value>
   </data>
   <data name="ResumeText2" xml:space="preserve">
-    <value>Experiência em arquitetura de software, padrões de projeto e boas práticas de desenvolvimento.</value>
+    <value>Capacidade comprovada de entregar soluções robustas utilizando o ecossistema .NET para atender às necessidades dos clientes.</value>
   </data>
   <data name="ResumeText3" xml:space="preserve">
-    <value>Comprometido com a entrega de soluções de alta qualidade e aprendizado contínuo.</value>
+    <value>Atualmente, estou aprimorando minha expertise técnica por meio de um Bacharelado Interdisciplinar em Ciência e Tecnologia.</value>
   </data>
   <data name="ResumeTitle" xml:space="preserve">
     <value>Resumo Profissional</value>

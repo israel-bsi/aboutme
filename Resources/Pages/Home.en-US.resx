@@ -123,6 +123,12 @@
   <data name="Contact" xml:space="preserve">
     <value>Contact</value>
   </data>
+  <data name="CrpTecnologia1" xml:space="preserve">
+    <value>• Development and maintenance of systems using .NET 8.</value>
+  </data>
+  <data name="Current" xml:space="preserve">
+    <value>Current</value>
+  </data>
   <data name="DegreeName" xml:space="preserve">
     <value>Interdisciplinary Bachelor's Degree in Science and Technology</value>
   </data>
@@ -144,6 +150,15 @@
   <data name="LanguageSpeak2" xml:space="preserve">
     <value>English - Intermediate</value>
   </data>
+  <data name="Month5" xml:space="preserve">
+    <value>May</value>
+  </data>
+  <data name="Month7" xml:space="preserve">
+    <value>September</value>
+  </data>
+  <data name="Month8" xml:space="preserve">
+    <value>August</value>
+  </data>
   <data name="NetDeveloper" xml:space="preserve">
     <value>Mid .NET Developer</value>
   </data>
@@ -154,7 +169,7 @@
     <value>• Automation of sending information in the background between the ERP and the POS using Windows Forms in the .NET Framework 4.8.</value>
   </data>
   <data name="Project2" xml:space="preserve">
-    <value>• Integration of the ERP with the issuance of Itaú and Santander bills, consuming the banks' API and handling the return of XML files to the ERP using .NET 6.</value>
+    <value>• Integration of the ERP with the issuance of Itaú, Santander and Bradesco bills, consuming the banks' API and handling the return of XML files to the ERP using .NET 6.</value>
   </data>
   <data name="Project3" xml:space="preserve">
     <value>• Integration of the ERP POS with Cresce Vendas, consuming the platform API and handling the return of XML files to the POS using .NET 6.</value>
@@ -193,13 +208,13 @@
     <value>• Maintenance of triggers, procedures and tables in the Firebird database.</value>
   </data>
   <data name="ResumeText1" xml:space="preserve">
-    <value>.NET developer with 3 years of experience in the market, with an Interdisciplinary Bachelor's Degree in Science and Technology in progress and with practical knowledge in the following technologies: </value>
+    <value>Results-oriented .NET developer with 3 years of experience, specialized in building and integrating Fullstack enterprise applications.</value>
   </data>
   <data name="ResumeText2" xml:space="preserve">
-    <value>Experience in software architecture, design patterns and good development practices.</value>
+    <value>Proven ability to deliver robust solutions using the .NET ecosystem to meet the needs of customers. Currently,</value>
   </data>
   <data name="ResumeText3" xml:space="preserve">
-    <value>Committed to delivering high quality solutions and continuous learning.</value>
+    <value>I am improving my technical expertise through a Interdisciplinary Bachelor of Science and Technology.</value>
   </data>
   <data name="ResumeTitle" xml:space="preserve">
     <value>Professional Summary</value>

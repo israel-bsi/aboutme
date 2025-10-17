@@ -2,8 +2,18 @@
 @inject IJSRuntime JSRuntime
 
 <MudMenu Icon="@Icons.Material.Filled.Translate" Color="Color.Inherit" Dense="true">
-    <MudMenuItem OnClick='() => ChangeCulture("pt-BR")'>Português</MudMenuItem>
-    <MudMenuItem OnClick='() => ChangeCulture("en-US")'>English</MudMenuItem>
+    <MudMenuItem OnClick='() => ChangeCulture("pt-BR")'>
+        <MudStack Row="true" AlignItems="AlignItems.Center" Spacing="2">
+            <span class="fi fi-br" style="font-size: 1.2em;"></span>
+            <MudText>Português</MudText>
+        </MudStack>
+    </MudMenuItem>
+    <MudMenuItem OnClick='() => ChangeCulture("en-US")'>
+        <MudStack Row="true" AlignItems="AlignItems.Center" Spacing="2">
+            <span class="fi fi-us" style="font-size: 1.2em;"></span>
+            <MudText>English</MudText>
+        </MudStack>
+    </MudMenuItem>
 </MudMenu>
 
 @code {
